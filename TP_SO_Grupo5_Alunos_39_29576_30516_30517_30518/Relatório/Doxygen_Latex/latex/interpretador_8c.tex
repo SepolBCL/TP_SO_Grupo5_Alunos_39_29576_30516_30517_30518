@@ -1,0 +1,68 @@
+\doxysection{Referência ao ficheiro interpretador.\+c}
+\hypertarget{interpretador_8c}{}\label{interpretador_8c}\index{interpretador.c@{interpretador.c}}
+
+
+Implementação de um interpretador simples que executa comandos básicos.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+Diagrama de dependências de inclusão para interpretador.\+c\+:
+% FIG 0
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{interpretador_8c_a7a9a231e30b47bc0345749c8bd1e5077}{MAX\+\_\+\+LENGTH}}~1024
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interpretador_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Função principal do interpretador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Implementação de um interpretador simples que executa comandos básicos. 
+
+Este programa implementa um interpretador que lê comandos do utilizador e executa comandos específicos ou ficheiros executáveis disponíveis no diretório atual. Os comandos disponíveis incluem\+:
+\begin{DoxyItemize}
+\item mostra
+\item copia
+\item acrescenta
+\item conta
+\item apaga
+\item informa
+\item lista
+\item termina
+\item help 
+\end{DoxyItemize}
+
+\doxysubsection{Documentação das macros}
+\Hypertarget{interpretador_8c_a7a9a231e30b47bc0345749c8bd1e5077}\label{interpretador_8c_a7a9a231e30b47bc0345749c8bd1e5077} 
+\index{interpretador.c@{interpretador.c}!MAX\_LENGTH@{MAX\_LENGTH}}
+\index{MAX\_LENGTH@{MAX\_LENGTH}!interpretador.c@{interpretador.c}}
+\doxysubsubsection{\texorpdfstring{MAX\_LENGTH}{MAX\_LENGTH}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+LENGTH~1024}
+
+
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{interpretador_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{interpretador_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{interpretador.c@{interpretador.c}!main@{main}}
+\index{main@{main}!interpretador.c@{interpretador.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função principal do interpretador. 
+
+Esta função implementa um loop que lê comandos do utilizador, analisa os comandos e executa-\/os utilizando um processo filho. Comandos reconhecidos são executados a partir de ficheiros executáveis na mesma diretoria ou são comandos internos como "{}help"{} e "{}termina"{}.
+
+\begin{DoxyReturn}{Retorna}
+int Código de retorno do programa\+: 0 em caso de sucesso. 
+\end{DoxyReturn}

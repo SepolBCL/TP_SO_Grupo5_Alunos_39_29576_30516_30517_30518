@@ -1,0 +1,45 @@
+\doxysection{Referência ao ficheiro apaga\+Ficheiro.\+c}
+\hypertarget{apaga_ficheiro_8c}{}\label{apaga_ficheiro_8c}\index{apagaFicheiro.c@{apagaFicheiro.c}}
+
+
+Programa para eliminar um ficheiro.  
+
+
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Diagrama de dependências de inclusão para apaga\+Ficheiro.\+c\+:
+% FIG 0
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{apaga_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Programa para eliminar um ficheiro. 
+
+Este programa recebe o nome de um ficheiro como argumento e procede à sua eliminação. Se o ficheiro for eliminado com sucesso, é retornada uma mensagem de sucesso. Caso contrário, retorna uma mensagem de erro. 
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{apaga_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{apaga_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{apagaFicheiro.c@{apagaFicheiro.c}!main@{main}}
+\index{main@{main}!apagaFicheiro.c@{apagaFicheiro.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em argc} & Número de argumentos passados na linha de comandos. \\
+\hline
+{\em argv} & Vetor de argumentos passados na linha de comandos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna 0 em caso de sucesso, 1 em caso de erro. 
+\end{DoxyReturn}

@@ -1,0 +1,50 @@
+\doxysection{Referência ao ficheiro informa\+Ficheiro.\+c}
+\hypertarget{informa_ficheiro_8c}{}\label{informa_ficheiro_8c}\index{informaFicheiro.c@{informaFicheiro.c}}
+
+
+Programa para imprimir as informações detalhadas sobre um ficheiro.  
+
+
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$pwd.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Diagrama de dependências de inclusão para informa\+Ficheiro.\+c\+:
+% FIG 0
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{informa_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função principal do programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Programa para imprimir as informações detalhadas sobre um ficheiro. 
+
+Imprime o tipo, inode, proprietário e datas relevantes (criação, última leitura e última modificação) de um ficheiro. 
+
+\doxysubsection{Documentação das funções}
+\Hypertarget{informa_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{informa_ficheiro_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{informaFicheiro.c@{informaFicheiro.c}!main@{main}}
+\index{main@{main}!informaFicheiro.c@{informaFicheiro.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Função principal do programa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em argc} & Número de argumentos passados na linha de comando. \\
+\hline
+{\em argv} & Vetor de argumentos passados na linha de comando. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna 0 em caso de sucesso, 1 em caso de erro. 
+\end{DoxyReturn}
